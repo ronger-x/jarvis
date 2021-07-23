@@ -1,0 +1,25 @@
+name: Jarvis
+version: "1.0"
+author: ronger <ronger-x@outlook.com>
+about: Jarvis —— Just A Rather Very Intelligent System
+args:
+  - config:
+      short: c
+      long: config
+      value_name: FILE
+      help: Sets a custom config file
+      takes_value: true
+  - read:
+      short: r
+      long: read
+      help: 读取文件
+      takes_value: true
+subcommands:
+  - test:
+      about: controls testing features
+      version: "1.3"
+      author: ronger <ronger-x@outlook.com>
+      args:
+        - debug:
+            short: d
+            help: print debug information
